@@ -1,0 +1,22 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main() {
+    cout<<"Nama : Yola Aprilia Putri\n";
+    cout<<"Nim : 22343079\n";
+    cout<<"Program Membuat Array 2 Dimensi\n";
+    cout<<"-------------------------\n";
+
+	int A[4][6]={{3,4,8,0,2,5},{3,9,2,1,0,4},{6,3,0,2,5,1},{0,6,3,7,1,5}};
+
+	for (int b=0;b<4;b++){
+		for (int k=0;k<6;k++){
+			cout<<A[b][k]<<" ";
+		}
+		cout << endl;
+	}
+getch();
+
+}
