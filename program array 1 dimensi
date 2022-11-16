@@ -1,1 +1,30 @@
 
+#include <iostream>
+
+using namespace std;
+int main (){
+    int A[10]= {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+    int tertinggi, terendah;
+
+    for (int i=0; i<10; i++){
+        cout<<"data baris ke "<<i<<" = "<<A[i];cout<<endl;
+    }
+
+    tertinggi = A[0];
+    terendah = A[0];
+
+    for (int j=0; j<10; j++){
+        if (A[j] > tertinggi){
+            tertinggi=A[j];
+        }
+        if (A[j] < terendah){
+            terendah=A[j];
+        }
+    }
+
+    cout<<"Nilai tertinggi adalah : "<<tertinggi<<endl;
+    cout<<"Nilai terendah adalah : "<<terendah<<endl;
+
+    return 0;
+
+}
